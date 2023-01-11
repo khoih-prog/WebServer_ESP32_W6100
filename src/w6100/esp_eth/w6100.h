@@ -9,11 +9,12 @@
   Built by Khoi Hoang https://github.com/khoih-prog/WebServer_ESP32_W6100
   Licensed under GPLv3 license
 
-  Version: 1.5.2
+  Version: 1.5.3
 
   Version Modified By   Date      Comments
   ------- -----------  ---------- -----------
-  1.5.2   K Hoang      06/01/2022 Initial coding for ESP32_W6100 (ESP32 + W6100). Sync with WebServer_ESP32_W6100 v1.5.2
+  1.5.2   K Hoang      06/01/2022 Initial coding for ESP32_W6100 (ESP32 + W6100). Sync with WebServer_ESP32_W5500 v1.5.2
+  1.5.3   K Hoang      11/01/2023 Using `SPI_DMA_CH_AUTO`
  *****************************************************************************************************************************/
 
 // Copyright 2020 Espressif Systems (Shanghai) PTE LTD

@@ -9,11 +9,12 @@
   Built by Khoi Hoang https://github.com/khoih-prog/WebServer_ESP32_W6100
   Licensed under GPLv3 license
 
-  Version: 1.5.2
+  Version: 1.5.3
 
   Version Modified By   Date      Comments
   ------- -----------  ---------- -----------
   1.5.2   K Hoang      06/01/2022 Initial coding for ESP32_W6100 (ESP32 + W6100). Sync with WebServer_ESP32_W5500 v1.5.2
+  1.5.3   K Hoang      11/01/2023 Using `SPI_DMA_CH_AUTO`
  *****************************************************************************************************************************/
 
 #pragma once
@@ -31,20 +32,20 @@
     #warning Using code for ESP32 core v2.0.0+ in WebServer_ESP32_W6100.h
   #endif
 
-  #define WEBSERVER_ESP32_W6100_VERSION       "WebServer_ESP32_W6100 v1.5.2 for core v2.0.0+"
+  #define WEBSERVER_ESP32_W6100_VERSION       "WebServer_ESP32_W6100 v1.5.3 for core v2.0.0+"
 #else
   #if (_ETHERNET_WEBSERVER_LOGLEVEL_ > 3)
     #warning Using code for ESP32 core v1.0.6- in WebServer_ESP32_W6100.h
   #endif
 
-  #define WEBSERVER_ESP32_W6100_VERSION       "WebServer_ESP32_W6100 v1.5.2 for core v1.0.6-"
+  #define WEBSERVER_ESP32_W6100_VERSION       "WebServer_ESP32_W6100 v1.5.3 for core v1.0.6-"
 #endif
 
 #define WEBSERVER_ESP32_W6100_VERSION_MAJOR    1
 #define WEBSERVER_ESP32_W6100_VERSION_MINOR    5
-#define WEBSERVER_ESP32_W6100_VERSION_PATCH    2
+#define WEBSERVER_ESP32_W6100_VERSION_PATCH    3
 
-#define WEBSERVER_ESP32_W6100_VERSION_INT      1005002
+#define WEBSERVER_ESP32_W6100_VERSION_INT      1005003
 
 //////////////////////////////////////////////////////////////
 
@@ -54,7 +55,7 @@
 
   #error ESP32_S2 not supported. Use WebServer_ESP32_SC_W6100 library
 
-#elif ( ARDUINO_ESP32C3_DEV )
+#elif ( defined(ARDUINO_ESP32C3_DEV) )
 
   #error ESP32_C3 not supported. Use WebServer_ESP32_SC_W6100 library
 

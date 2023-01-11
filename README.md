@@ -105,9 +105,11 @@ This [**WebServer_ESP32_W6100** library](https://github.com/khoih-prog/WebServer
 
  1. **ESP32_DEV with W6100 boards** using `LwIP W6100 Ethernet`
 
-
+---
 
 #### W6100
+
+`FULL_DUPLEX, 100Mbps`
 
 <p align="center">
     <img src="https://github.com/khoih-prog/WebServer_ESP32_W6100/raw/main/pics/W6100.png">
@@ -399,6 +401,8 @@ You can change the `INT` pin to another one. Default is `GPIO4`
 
 #### W6100
 
+`FULL_DUPLEX, 100Mbps`
+
 <p align="center">
     <img src="https://github.com/khoih-prog/WebServer_ESP32_W6100/raw/main/pics/W6100.png">
 </p>
@@ -471,7 +475,7 @@ The following are debug terminal output and screen shot when running example [Ad
 
 ```cpp
 Start AdvancedWebServer on ESP32_DEV with ESP32_W6100
-WebServer_ESP32_W6100 v1.5.2 for core v2.0.0+
+WebServer_ESP32_W6100 v1.5.3 for core v2.0.0+
 [EWS] Default SPI pinout:
 [EWS] SPI_HOST: 2
 [EWS] MOSI: 23
@@ -499,7 +503,7 @@ The terminal output of **ESP32_DEV with W6100** running [MQTT_ThingStream exampl
 
 ```cpp
 Start MQTT_ThingStream on ESP32_DEV with ESP32_W6100
-WebServer_ESP32_W6100 v1.5.2 for core v2.0.0+
+WebServer_ESP32_W6100 v1.5.3 for core v2.0.0+
 [EWS] Default SPI pinout:
 [EWS] SPI_HOST: 2
 [EWS] MOSI: 23
@@ -532,7 +536,7 @@ The terminal output of **ESP32_DEV with W6100** running [MQTTClient_Auth example
 
 ```cpp
 Start MQTTClient_Auth on ESP32_DEV with ESP32_W6100
-WebServer_ESP32_W6100 v1.5.2 for core v2.0.0+
+WebServer_ESP32_W6100 v1.5.3 for core v2.0.0+
 [EWS] Default SPI pinout:
 [EWS] SPI_HOST: 2
 [EWS] MOSI: 23
@@ -562,7 +566,7 @@ The terminal output of **ESP32_DEV with W6100** running [MQTTClient_Basic exampl
 
 ```cpp
 Start MQTTClient_Basic on ESP32_DEV with ESP32_W6100
-WebServer_ESP32_W6100 v1.5.2 for core v2.0.0+
+WebServer_ESP32_W6100 v1.5.3 for core v2.0.0+
 [EWS] Default SPI pinout:
 [EWS] SPI_HOST: 2
 [EWS] MOSI: 23
@@ -593,7 +597,7 @@ The terminal output of **ESP32_DEV with W6100** running [WebClient example](exam
 
 ```cpp
 Start WebClient on ESP32_DEV with ESP32_W6100
-WebServer_ESP32_W6100 v1.5.2 for core v2.0.0+
+WebServer_ESP32_W6100 v1.5.3 for core v2.0.0+
 [EWS] Default SPI pinout:
 [EWS] SPI_HOST: 2
 [EWS] MOSI: 23
@@ -612,7 +616,7 @@ FULL_DUPLEX, 100Mbps
 Starting connection to server...
 Connected to server
 HTTP/1.1 200 OK
-Date: Sun, 08 Jan 2023 21:34:02 GMT
+Date: Wed, 11 Jan 2023 19:29:39 GMT
 Content-Type: text/plain
 Content-Length: 2263
 Connection: close
@@ -679,7 +683,7 @@ The terminal output of **ESP32_DEV with W6100** running [UdpNTPClient example](e
 
 ```cpp
 Start UdpNTPClient on ESP32_DEV with ESP32_W6100
-WebServer_ESP32_W6100 v1.5.2 for core v2.0.0+
+WebServer_ESP32_W6100 v1.5.3 for core v2.0.0+
 [EWS] Default SPI pinout:
 [EWS] SPI_HOST: 2
 [EWS] MOSI: 23
@@ -695,10 +699,10 @@ ETH Connected
 ETH MAC: 0C:B8:15:D8:01:D7, IPv4: 192.168.2.87
 FULL_DUPLEX, 100Mbps
 UDP Packet received, size 48
-From 132.163.96.6, port 123
-Seconds since Jan 1 1900 = 3882196591
-Unix time = 1673207791
-The UTC time is 19:56:31
+From 132.163.97.3, port 123
+Seconds since Jan 1 1900 = 3882452857
+Unix time = 1673464057
+The UTC time is 19:07:37
 ```
 
 ---
@@ -739,7 +743,9 @@ Submit issues to: [WebServer_ESP32_W6100 issues](https://github.com/khoih-prog/W
 ### DONE
 
  1. Add support to ESP32-based **ESP32_DEV with W6100** using `LwIP W6100 Ethernet`
-
+ 2. Using `SPI_DMA_CH_AUTO`
+ 
+ 
 ---
 ---
 
@@ -780,6 +786,6 @@ If you want to contribute to this project:
 
 - Copyright (c) 2016- Hristo Gochkov
 
-- Copyright (c) 2022- Khoi Hoang
+- Copyright (c) 2023- Khoi Hoang
 
 

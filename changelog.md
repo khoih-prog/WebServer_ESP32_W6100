@@ -16,12 +16,17 @@
 
 
 * [Changelog](#changelog)
+  * [Releases v1.5.3](#releases-v153)
   * [Releases v1.5.2](#releases-v152)
 
 ---
 ---
 
 ## Changelog
+
+#### Releases v1.5.3
+
+1. Using `SPI_DMA_CH_AUTO`
 
 #### Releases v1.5.2
 
